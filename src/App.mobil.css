@@ -1,0 +1,13 @@
+@media screen and (max-width: 700px) {
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    display:flex;
+    flex-direction: column;
+    height: 170px;
+}
+
+}
