@@ -1,9 +1,15 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import mypic from "../assets/mypic.png";
-import SEO from "../assets/7484896.jpg";
-import webdev from "../assets/webdev.jpg";
+import SEO from "../assets/74848961.png";
+import webdev from "../assets/webdev1.png";
 import security from "../assets/sysadmin.jpg";
 export default function Test() {
+  const navigate = useNavigate();
+  const navigateToArticle = (articleId: string) => {
+    navigate("/About", { state: { articleId } });
+  };
+
   const data = {
     idoption: [
       {
@@ -70,9 +76,25 @@ export default function Test() {
               alignItems: "center",
             }}
           >
-            <img src={item.image[0]} alt="seo" className="optionimg workimgs" />
-            <img src={item.image[2]} alt="" className="optionimg workimgs" />
-            <img src={item.image[1]} alt="" className="optionimg workimgs" />
+            <img
+              src={item.image[0]}
+              alt="seo"
+              className="optionimg workimgs"
+              onClick={() => navigateToArticle("article1")}
+            />
+
+            <img
+              src={item.image[2]}
+              alt=""
+              className="optionimg workimgs"
+              onClick={() => navigateToArticle("article2")}
+            />
+            <img
+              src={item.image[1]}
+              alt=""
+              className="optionimg workimgs"
+              onClick={() => navigateToArticle("article3")}
+            />
           </div>
         </div>
       ));
