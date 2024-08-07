@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Element, scroller } from "react-scroll";
-import { useLocation } from "react-router-dom";
+import  { useLocation, Link } from "react-router-dom";
 
 import Seo from "../assets/74848961.png";
 import webdev from "../assets/webdev1.png";
@@ -45,6 +45,9 @@ export default function About() {
                 attracting organic traffic.In today's digital landscape, having
                 a strong online presence is crucial for businesses to thrive.
               </p>
+              <Link to="/contact" className="no-text-decoration">
+                <p className="hirebtn">HIRE ME</p>
+              </Link>
             </article>
           </section>
         </Element>
@@ -68,6 +71,9 @@ export default function About() {
               unlocking the full potential of the online marketplace and
               achieving lasting success.
             </p>
+            <Link to="/contact" className="no-text-decoration">
+              <p className="hirebtn">HIRE ME</p>
+            </Link>
           </article>
         </section>
       </Element>
@@ -88,6 +94,9 @@ export default function About() {
               empower your business to thrive in a secure and resilient
               environment.
             </p>
+            <Link to="/contact" className="no-text-decoration">
+              <p className="hirebtn">HIRE ME</p>
+            </Link>
           </article>
         </section>
       </Element>
@@ -96,7 +105,7 @@ export default function About() {
         <figure>
           <img src={data} alt="seo" style={{ width: 300 }} />
         </figure>
-        <article style={{ height: "auto", width: 500 }}>
+        <article style={{ height: "auto", width: 500, marginBottom: "10px" }}>
           <p>
             <span className="serviceheaders">
               Data Analysis and Visualization
@@ -110,6 +119,9 @@ export default function About() {
             engaging formats, facilitating decision-making and driving strategic
             initiatives.
           </p>
+          <Link to="/contact" className="no-text-decoration">
+            <p className="hirebtn">HIRE ME</p>
+          </Link>
         </article>
       </section>
     </div>

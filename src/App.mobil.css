@@ -10,4 +10,10 @@
     height: 170px;
 }
 
+.optionsbtns{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 }

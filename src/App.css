@@ -38,7 +38,22 @@ justify-content: space-between;
 
 /* ****** ABOUT ******* */
 section{
- box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ border:1px solid white;
+ width: 80%;
+ margin:0 auto;
+}
+
+.hirebtn{
+  border:1px solid ;
+  font-weight:bold ;
+  text-decoration: none;
+  
+}
+.no-text-decoration{text-decoration: none;
+}
+.hirebtn:hover{
+  background-color: #82A9E8;
 }
 
 .container section {
@@ -207,18 +222,25 @@ form{
  height: 100vh;
 }
 .header{
-  height: 500px;
+  background-color: #1e1e1e; /* Terminal background color */
+  color: #00ff00; /* Terminal text color */
+  font-family: 'Courier New', Courier, monospace; /* Terminal font */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   width: 80%;
+  max-width: 600px;
+  height: 90vh;
+  overflow-y: auto;
   margin: 0 auto;
-  background-color:#11161E;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  color: white;
 }
 .headermenu{
   display: flex;
   gap: 20px;
 
+}
+.terminalprompt{
+  font-weight: bold;
 }
 .headermenu p{
   box-shadow:  0 4px 6px rgba(255, 254, 254, 0.5);
@@ -255,13 +277,9 @@ form{
   height:80px;
   width: 80px;
 }
-.workimgs{
-  height: 100px;
-  width: 100px;
-  box-shadow: 0 4px 6px rgba(250, 250, 250, 0.3);
-  border-radius: 20px;
+
   
-}
+
 .typingcursor{
   animation: blink 0.7s step-start infinite;
 }
@@ -270,10 +288,25 @@ form{
 }
 .landingbtn{
 color: white;
-  background-color: black;
-  border: none;
+ 
+  border: 1px solid #00ff00;
   padding-bottom: 0;
   margin: 0;
+}
+.desc{
+  line-height: 1.5;
+}
+.landingpage{
+    display: flex;
+    
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2d2d2d;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace; /* Terminal font */
+  color: #00ff00; /* Terminal text color */
+
 }
 
 .landingbtn:hover{
@@ -282,9 +315,12 @@ color: white;
 }
 .landingbtndiv{
   width: 100%;
-  background-color: #30363D;
+  margin-bottom: 8px;
+ 
 }
-
+.optionsbtn{
+  padding: 5px;
+}
 .optiondesc{
   width: 500px;
   height: 200px;
