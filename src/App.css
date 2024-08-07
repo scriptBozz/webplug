@@ -63,6 +63,12 @@ figure{
   height: 300px;
 }
 
+.serviceheaders{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #82a9e8;
+}
+
 section p{
   padding: 8px;
   text-align: center;
