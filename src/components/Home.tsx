@@ -12,7 +12,7 @@ export default function Home() {
       <div className="header">
         <Test />
       </div>
-      <div style={{}}>
+      <div style={{position:"fixed", left:"85%", top:"80%"}}>
         <Downloadcv />
         <Showcv />
       </div>
